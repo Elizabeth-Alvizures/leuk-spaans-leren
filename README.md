@@ -19,7 +19,6 @@ The goal is to create an accessible learning experience where beginners can stud
 
 ## Tech Stack
 
-- React
 - JavaScript
 - HTML
 - CSS
@@ -31,6 +30,7 @@ In development — October 2026.
 
 The first version will focus on the A1 level, starting with greetings, pronunciation, and basic introductions.
 
+Features will be developed and added incrementally.
 
 ## Author
 
