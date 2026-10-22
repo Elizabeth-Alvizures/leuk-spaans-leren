@@ -1,0 +1,72 @@
+
+/* General colors */
+:root {
+    --primary: #008F95;
+    --primary-hover: #00777D;
+    --text-dark: #0F2942;
+    --text-muted: #6B7C8E;
+    --orange: #C06B00;
+    --white: #FFFFFF;
+}
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+}
+
+h1, h2, h3, h4, .logo {
+    font-family: Arial, sans-serif;
+}
+
+/* Main title */
+.hero-left h1 {
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--text-dark);
+}
+
+/* Hola card title */
+.card-visual h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+/* Background */
+.page-container {
+    min-height: 100vh;
+    position: relative;
+
+    background:
+            radial-gradient(
+                    ellipse at 12% 28%,
+                    rgba(0, 177, 198, 0.65),
+                    transparent 32%
+            ),
+            radial-gradient(
+                    ellipse at 88% 35%,
+                    rgba(53, 163, 239, 0.7),
+                    transparent 35%
+            ),
+            radial-gradient(
+                    ellipse at 50% 8%,
+                    rgba(255, 225, 112, 0.65),
+                    transparent 35%
+            ),
+            radial-gradient(
+                    ellipse at 95% 5%,
+                    rgba(255, 167, 130, 0.65),
+                    transparent 25%
+            ),
+            #FFFFFF;
+}
+
+a {
+    color: inherit;
+}

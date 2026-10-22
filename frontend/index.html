@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leuk Spaans Leren | Spaans A1</title>
+
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="/src/css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page-container">
+
+  <header class="header">
+    <a class="logo" href="/">
+      Leuk <span>Spaans</span> Leren
+    </a>
+
+    <nav class="nav">
+      <a href="/" class="active">Home</a>
+      <a href="/src/pages/lessons.html">Lessen</a>
+      <a href="/src/pages/about.html">Over de cursus</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Spaans leren,<br>stap voor stap.</h1>
+        <p>Korte A1-lessen met audio en oefeningen.</p>
+
+        <div class="cta-group">
+          <a class="btn btn-primary"
+             href="/src/pages/lesson.html">
+            Start met les 1 →
+          </a>
+
+          <a class="btn btn-secondary"
+             href="/src/pages/lessons.html">
+            Bekijk de lessen
+          </a>
+        </div>
+      </div>
+
+
+      <div class="hero-right">
+
+        <div class="card-back">
+          <div class="speech-bubble">
+            •••
+          </div>
+        </div>
+
+        <div class="card-visual">
+          <h2>Hola</h2>
+          <p>Hallo</p>
+
+          <button
+                  class="audio-btn"
+                  id="play-audio"
+                  type="button"
+                  aria-label="Luister naar Hola">
+            🔊
+          </button>
+        </div>
+
+        <div class="decoration-group decoration-top" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="decoration-group decoration-bottom" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="discovery">
+      <h2>Ontdek de lessen</h2>
+
+      <p class="subtitle">
+        Korte, praktische lessen waarmee je stap voor stap
+        Spaans leert. Speciaal voor Nederlandstaligen,
+        op A1-niveau.
+      </p>
+
+      <div class="grid-lessons">
+
+        <article class="lesson-card">
+          <div class="card-header">
+            <span class="lesson-number">01</span>
+            <span class="card-icon">💬</span>
+          </div>
+
+          <h3>Begroeten en jezelf voorstellen</h3>
+          <p>
+            Leer hoe je iemand begroet en
+            vertelt wie je bent.
+          </p>
+
+          <a class="btn-card active"
+             href="/src/pages/lesson.html">
+            Start les →
+          </a>
+        </article>
+
+        <article class="lesson-card">
+          <div class="card-header">
+            <span class="lesson-number">02</span>
+            <span class="card-icon">🔢</span>
+          </div>
+
+          <h3>Cijfers en leeftijden</h3>
+          <p>
+            Leer tellen, je leeftijd zeggen
+            en eenvoudige getallen gebruiken.
+          </p>
+
+          <button class="btn-card disabled" disabled>
+            Binnenkort
+          </button>
+        </article>
+
+        <article class="lesson-card">
+          <div class="card-header">
+            <span class="lesson-number">03</span>
+            <span class="card-icon">👨‍👩‍👧</span>
+          </div>
+
+          <h3>Familie en vrienden</h3>
+          <p>
+            Leer praten over je familie,
+            vrienden en belangrijke mensen om je heen.
+          </p>
+
+          <button class="btn-card disabled" disabled>
+            Binnenkort
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="banner-content">
+        <div class="banner-icon">🌱</div>
+
+        <div class="banner-text">
+          <h4>Leer in je eigen tempo.</h4>
+          <p>Kleine stappen, groot resultaat.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script type="module" src="/src/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+
+/* Header */
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--orange);
+}
+
+/* Hero */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+}
+
+.hero-left p {
+    font-size: 20px;
+    color: #49677B;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.cta-group {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/* General button style */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: #EDBEA3;
+    color: #0F2942;
+    border: 1.5px solid #A65F43;
+}
+
+.btn-primary:hover {
+    background-color: #E5AD8D;
+    border-color: #A65F43;
+}
+
+/* Secondary button */
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #0F2942;
+    border: 2px solid #0F2942;
+}
+
+.btn-secondary:hover {
+    background-color: #E2F3F5;
+}
+
+/* Hola card */
+.hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+}
+
+.card-visual {
+    position: relative;
+    z-index: 2;
+    width: 220px;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    transform: rotate(-12deg);
+    box-shadow: 0 20px 35px rgba(15, 41, 66, 0.12);
+}
+
+.card-back {
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    transform: translate(95px, 25px) rotate(14deg);
+    box-shadow: 0 15px 30px rgba(15, 41, 66, 0.08);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-bubble {
+    width: 65px;
+    height: 55px;
+    background: #FFE0D1;
+    color: #B86B00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+/* Decorative orange lines */
+.decoration-group {
+    position: absolute;
+    width: 70px;
+    height: 65px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.decoration-group span {
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: #C06B00;
+    border-radius: 3px;
+}
+
+/* Three lines above the cards */
+.decoration-top {
+    top: 0;
+    right: 55px;
+}
+
+.decoration-top span:nth-child(1) {
+    top: 12px;
+    left: 5px;
+    width: 16px;
+    transform: rotate(90deg);
+}
+
+.decoration-top span:nth-child(2) {
+    top: 20px;
+    left: 30px;
+    transform: rotate(-65deg);
+}
+
+.decoration-top span:nth-child(3) {
+    top: 45px;
+    left: 42px;
+    transform: rotate(-30deg);
+}
+
+/* Two lines below and to the left */
+.decoration-bottom {
+    bottom: 35px;
+    left: 15px;
+}
+
+.decoration-bottom span:nth-child(1) {
+    top: 12px;
+    left: 0;
+    transform: rotate(-20deg);
+}
+
+.decoration-bottom span:nth-child(2) {
+    top: 35px;
+    left: 18px;
+    transform: rotate(-55deg);
+}
+
+
+.card-visual h2 {
+    font-size: 48px;
+    color: var(--orange);
+    margin: 0 0 5px;
+}
+
+.card-visual p {
+    color: var(--text-muted);
+}
+
+.audio-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #E2F3F5;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+/* Lessons */
+.discovery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+.discovery h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.grid-lessons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.lesson-card {
+    background: #FAFCFE;
+    border: 1px solid #EBF2F7;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.lesson-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.card-icon {
+    font-size: 40px;
+}
+
+.lesson-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.lesson-card p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.btn-card {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-card.active {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-card.disabled {
+    background: #EDF2F6;
+    color: #A3B8CC;
+    cursor: not-allowed;
+}
+
+/* Banner */
+.promo-banner {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.banner-content {
+    background: linear-gradient(90deg, #FFF9EE, #E2F5F7);
+    border-radius: 24px;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.banner-icon {
+    font-size: 32px;
+}
+
+.banner-text h4 {
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+
+.banner-text p {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .hero-left h1 {
+        font-size: 46px;
+    }
+
+    .cta-group {
+        justify-content: center;
+    }
+
+    .grid-lessons {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .cta-group {
+        flex-direction: column;
+    }
+}
