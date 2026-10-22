@@ -35,5 +35,4 @@ Features will be developed and added incrementally.
 ## Author
 
 Elizabeth Alvizures
-
-Software Development student at Hogeschool Utrecht, Netherlands.
+Software Development student
